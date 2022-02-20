@@ -1,0 +1,211 @@
+@import"./mediaqueries";
+@import"./reset";
+@import"./variables";
+
+   //**Hero*//* Main *//****INDEX****/  
+
+  .descripcion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("/css/assets/eco.jpg");
+    background-color:$negro-titulo;
+    background-blend-mode:soft-light ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+
+
+.descripcion .perfil{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: 7px solid $amarillo;
+}
+.descripcion .perfil img{
+   width: 100%;
+   border-radius: 50%;
+   filter: grayscale(.5);
+}
+.descripcion  .nombre{
+   
+   color: $amarillo;
+   font-size: 100px;
+   font-weight: 900;
+   margin: 10px 0;
+}
+.descripcion .boton a{
+   background: $amarillo;
+   padding: 10px;
+   display: inline-block;
+   border-radius: 3px;
+   color: $negro-parrafo;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: $negrita;
+
+}
+main section .texto  h2 .span-coder{
+   color:$amarillo-fuerte;
+   font-family: $letra-body;
+   font-weight: $negrita;
+}
+main section .texto  h2 {
+    font-size: 24px;
+    font-weight: $negrita;
+    color: $negro-titulo;
+    margin: 20px 0;
+    margin-top: 20px;
+    $text-center: center;
+    font-family: $letra-body, Courier, monospace
+}
+main section .texto p {
+   $text-center: justify;
+   margin: 5px 0 10px 0;
+   font-size: 18px;
+}
+
+  /*********INDEX-CARDS************/
+
+main .tarjetas{
+   background: #e0e0e0;
+   padding: 20px 0;
+}
+main .tarjetas h3{
+   font-size: 24px;
+    font-weight: $negrita;
+    color: $negro-titulo;
+    margin: 20px 0;
+    margin-top: 20px;
+    $text-center: center;
+    font-family: $letra-body, Courier, monospace
+}
+main .tarjetas .contenedor{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+main .tarjetas .contenedor .tarjeta{
+   
+   width: 22%;
+   background: #fff;
+   padding: 20px;
+   margin: 20px auto;
+   
+}
+
+main .tarjetas .contenedor .tarjeta .perfil{
+   width: 60%;
+   background: gray;
+   border-radius: 50%;
+   margin: 0 auto;
+
+}
+main .tarjetas .contenedor .tarjeta img{
+   width: 100%;
+   border-radius: 50%;
+}
+main .tarjetas .contenedor .tarjeta .titulo{
+   margin: 15px 0;
+}
+main .tarjetas .contenedor .tarjeta .titulo h3{
+   font-size: 21px;
+   color: $amarillo;
+   $text-center: center;
+   font-weight: $negrita;
+   font-family:$letra-body
+}
+main .tarjetas .contenedor .tarjeta .opinion p{
+   $text-center: center;
+   font-style: italic;
+    font-family: $letra-body;
+    color: $negro-parrafo;
+}
+main .tarjetas .contenedor .tarjeta:hover {
+   -webkit-box-shadow: 10px 10px 8px 4px rgba(0,0,0,0.58);
+   -moz-box-shadow: 10px 10px 8px 4px rgba(0,0,0,0.58);
+    box-shadow: 10px 10px 8px 4px rgba(0,0,0,0.58);
+}
+ 
+/************FORMULARIO***************/
+main .contacto{
+   background-color: #c1c1c1;
+   padding: 50px 0 ;
+}
+main .contacto h3{
+   font-size: 24px;
+   font-weight: $negrita;
+   color: $negro-titulo;
+   margin: 20px 0;
+   margin-top: 20px;
+   $text-center: center;
+   font-family: $letra-body, Courier, monospace
+}
+
+main .contacto .contenedor .formulario{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+
+}
+
+main .formulario .nombre, .email, .tel, .apellido, .mensaje {
+   background: none;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid gray;
+   padding: 15px 20px;
+   font-family: $letra-titulo;
+   font-size: 16px;
+   color:#1c1c1c;
+   transition: all 1s ease;
+   margin-bottom: 20px;
+
+
+}
+
+main .formulario .nombre, .email, .tel, .apellido{
+   width: 46%;
+  
+
+}
+main .formulario .mensaje{
+   width: 96%;
+   min-width: 96%;
+   max-width: 96%;
+   resize: none;
+   min-height: 100px;
+   max-height: 300px; 
+}
+main .formulario .nombre:focus,
+main .formulario .email:focus,
+main .formulario .tel:focus,
+main .formulario .mensaje:focus,
+main .formulario .apellido:focus{
+   border-bottom: 3px solid #1c1c1c;
+}
+
+main .formulario .btn{
+   margin: auto;
+   padding: 15px 25px;
+   font-size: $letra-titulo;
+   font-size: 16px;
+   background: none;
+   background-color: $amarillo;
+   border: none;
+   font-weight: $negrita;
+   color: #1c1c1c;
+   border-radius: 7px;
+   cursor: pointer;
+
+}
+main .formulario .btn:hover{
+   background-color:$amarillo-fuerte;
+
+}
+

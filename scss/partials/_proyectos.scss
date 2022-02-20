@@ -1,0 +1,97 @@
+@import"./mediaqueries";
+@import"./reset";
+@import"./variables";
+/***********PAGE-PROYECTOS-CARTAS******************/
+main .servicios{
+    padding: 30px 10px;
+    background: #e0e0e0;
+
+}
+main .servicios h3{
+    font-size: 24px;
+    font-weight: $negrita;
+    color: $negro-titulo;
+    margin: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+    font-family: $letra-body, Courier, monospace
+}
+main .servicios .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    perspective:200px ;
+    -webkit-perspective:350px; 
+    -moz-perspective:350px;
+ 
+}
+
+
+main .servicios .contenedor .servicio{
+    width: 28%;
+    height: 300px;
+    margin: 20px;
+    border-radius :3px; 
+    position: relative;
+    transition: all 1.5s ease;
+    transform-style: preserve-3d;
+    -webkit-box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75);
+}
+main .servicios .contenedor .servicio .delante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden; /* Chrome and Safari */
+    -moz-backface-visibility:hidden; /* Firefox */
+    -ms-backface-visibility:hidden; /* Internet Explorer */
+}
+
+main .servicios .servicio .atras {
+    transform: rotateY(180deg);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+        background: $negro-titulo;
+        color: $amarillo;
+        text-align: center;
+        
+}
+main .servicios  .servicio .delante{
+        text-align: center;
+        font-family: $letra-titulo;
+        font-weight: $negrita;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(237,203,84);
+        background: radial-gradient(circle, rgba(237,203,84,1) 0%, rgba(255,219,73,1) 67%);
+        
+  
+        
+}
+main .servicios .servicio:hover{
+        transform: rotateY(180deg);
+}
+main .servicios .servicio .delante .icono{
+    font-size: 48px;
+    color: #1c1c1c;
+
+}
+main .servicios .servicio .atras .icono{
+    font-size: 24px;
+    color: #c2c2c2;
+}
+iframe .video{
+   padding: 20px;
+      margin: 30px;
+  }

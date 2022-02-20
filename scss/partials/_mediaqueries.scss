@@ -1,0 +1,128 @@
+/************************Responsive**********************************/
+@media screen and (max-width:992px){
+    footer .contenedor{
+        display: $d-flex;
+        justify-content: space-around;
+        align-items: center;
+        $d-flex-direction: column;
+    }
+}
+@media  screen and (min-width:769px) {
+    .menu-padre nav li{
+        display: inline-block;
+       
+    }
+    .menu-padre{
+        display: $d-flex; 
+        justify-content: space-between;
+        align-items: center;
+        $d-flex-direction: column;
+    
+    }
+
+    
+}
+
+@media screen and (max-width:1200px){
+
+
+    main .tarjetas .contenedor{
+        display: $d-flex;
+        align-items: center;
+        justify-content: space-around;
+        $d-flex-wrap: wrap;
+    }
+   
+
+    main .tarjetas .contenedor .tarjeta{
+        width: 42%;
+        background: #fff;
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    main .servicios .contenedor {
+        display: $d-flex  ;
+        $d-flex-wrap: wrap ;
+
+    }
+    main .servicios .contenedor .servicio{
+        width: 42%;
+        height: 300px;
+        margin: 20px;
+        border-radius :3px; 
+        position: relative;
+        transition: all 1.5s ease;
+        transform-style: preserve-3d;
+        -webkit-box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75);
+    }
+
+}
+
+@media  screen and (max-width:768px) {
+    .menu-padre nav li{
+        display: list-item;
+    }
+  
+    main .formulario .nombre, .email, .tel, .apellido, .mensaje {
+        width: 96%;
+    }
+
+    .menu-padre{
+        display: $d-flex; 
+        justify-content: space-between;
+        align-items: center;
+        $d-flex-direction: column;
+    }
+    main .tarjetas .contenedor{
+        display: $d-flex;
+        align-items: center;
+        justify-content: space-around;
+        $d-flex-wrap: wrap;
+    }
+    main .tarjetas .contenedor .tarjeta{
+        
+        width: 90%;
+        background: #fff;
+        padding: 20px;
+        margin: 20px 10px ;
+    }
+    main .servicios .contenedor{
+        display:$d-flex;
+        $d-flex-direction: column;
+        
+    }
+    .imagen-about-us{
+        display: none;
+        
+    }
+    main .servicios .contenedor .servicio {
+        width:92% ;
+        height: 300px;
+        margin: 20px;
+        border-radius: 3px;
+        position: relative;
+        transition: all 1.5s ease;
+        transform-style: preserve-3d;
+        }
+    .container1 .content{
+                grid-column: 1 / -1;
+            }
+    .content .article{
+        padding: 0px;
+    }
+    .container1 .sidebar{
+        grid-column: 1/-1;
+    }
+    .sobre-nosotros .contenido-textos {
+        width: auto;
+    }
+           
+ }
+  /********************************/
+
+
+
+
+

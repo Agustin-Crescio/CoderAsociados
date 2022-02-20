@@ -1,0 +1,38 @@
+@import"./variables";
+@import"./mediaqueries";
+@import"./reset";
+footer{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    padding: 50px 0;
+
+}
+footer .contenedor{
+    display: $d-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .contenedor .logo h3{
+    font-size: 30px;
+    font-family: $letra-body, sans-serif;
+    font-weight: $negrita;
+    color: $amarillo;
+}
+footer .contenedor .derechos p{
+    font-size: 20px;
+    color: wheat;
+    font-family: $letra-titulo;
+    font-weight: lighter;
+}
+footer .redes-sociales a {
+    color: #616161;
+    font-size: 30px;
+    display: inline-block;
+    padding: 15px 5px;
+}
+footer .redes-sociales a:hover{
+    color: #fff;
+
+}

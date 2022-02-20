@@ -1,0 +1,50 @@
+
+@import "./mediaqueries";
+@import "./reset";
+@import"./variables"; 
+
+/*******************PAGE-ACERCA DE NOS****************************/
+.container1{
+    background:#fff;
+    width: 80%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+.container1 .content{
+    grid-column: span 3;
+}
+.content .article{
+    padding: 50px;
+    margin-top: 5px;
+    background: #fff;
+
+}
+.content .article h1{
+
+    padding: 10px;
+    color: #edcb54;
+    font-size: 30px;
+    text-align: start;
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+.content .article p{
+    padding: 10px;
+}
+
+.container1 .sidebar{
+    background: #fff;
+    grid-column: span 2;
+    color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container1 .sidebar img{
+    width: 100%;
+    margin-top: 5px;
+}
