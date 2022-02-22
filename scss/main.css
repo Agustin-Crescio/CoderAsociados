@@ -1022,7 +1022,7 @@ body {
   display: -ms-grid;
   display: grid;
   gap: 1.6em;
-  -ms-grid-columns: (1fr)[5];
+  -ms-grid-columns: (1fr) 5;
       grid-template-columns: repeat(5, 1fr);
 }
 

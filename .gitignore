@@ -1,3 +1,7 @@
 node_modules/
-.gitignore/
+.gitignore
 *.json
+
+git remote add origin https://github.com/Agustin-Crescio/CoderAsociados.git
+git branch -M master
+git push -u origin master
